@@ -1,4 +1,4 @@
-/* Riot v3.0.0-alpha.11, @license MIT */
+/* Riot WIP, @license MIT */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -8046,6 +8046,8 @@ function _each(dom, parent, expr) {
         Object.keys(items).map(function (key) {
           return mkitem(expr, items[key], key)
         }) : [];
+    } else {
+      hasKeys = false;
     }
 
     if (ifExpr) {
